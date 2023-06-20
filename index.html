@@ -1,417 +1,470 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-
-body {
-    background-color: #e23753;
-    min-height: 100%;
-    width: 100%;
-    background-size: cover;
-    padding: 25px;
-
-}
-
-
-.icon-container {
-    border: 4px solid #463375;
-    border-radius: 100%;
-    padding: 10px;
-    color: #463375;
-
-}
-
-@media screen and (max-width: 576px) {
-    .person-container {
-        flex-wrap: wrap;
-        
-        
-    }
-    .icon-name{
-        margin-bottom: 0px;
-    }
-}
-
-.section-container {
-    min-height: 30%;
-    background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-    .section-container {
-        min-height: 25%;
-    }
-}
-
-.icon-name {
-    margin-top: 10px;
-    color: #463375;
-    font-family: "Roboto";
-    font-size: 15px;
-    text-align: center;
-}
-
-.main-heading {
-    color: #463375;
-    font-family: "Roboto";
-    flex-wrap: wrap;
-    font-weight: 500;
-
-}
-
-@media screen and (max-width: 768px) {
-    .main-heading {
-        font-size: 20px;
-        margin-top: 0px;
-    }
-}
-
-.description {
-    font-size: 15px;
-    color: #463375;
-}
-
-@media screen and (max-width: 768px) {
-    .description {
-        font-size: 12px;
-    }
-}
-
-.advertising-container {
-    min-height: 30%;
-    border-left: 3px solid #000000;
-    margin-bottom: 0px;
-    text-align: left;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-
-}
-
-.content {
-    font-size: 15px;
-    color: #463375;
-    font-family: "Roboto";
-}
-
-@media screen and (max-width: 768px) {
-    .content {
-        font-size: 13px;
-    }
-}
-
-.heading-content {
-    color: #3e2e64;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-hr {
-    margin-top: 0px;
-    margin-left: 90px;
-    border: 0;
-    clear: both;
-    display: block;
-    width: 85%;
-    background-color: #000000;
-    height: 2px;
-    margin-bottom: 0px;
-}
-
-.award-container {
-    border-left: 3px solid #000000;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-}
-
-.work-description {
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-.image-container {
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color: #463375;
-}
-
-.color {
-    color: #e23753;
-}
-
-.dots-paragraph {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-    min-height: 10%;
-}
-
-.dot-margins {
-    margin-left: -5%;
-}
-
-.dot {
-    text-align: left;
-    margin: 0px;
-    flex-wrap: wrap;
-
-}
-
-.dots {
-    margin: -22px;
-
-}
-.status-container{
-    margin-right: 50px;
-    margin-left: 60px;
-    
-}
-.intrest-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-</style>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Section</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-
-<body>
-    <div class="d-flex flex-column justify-content-center p-5">
-        <div class="section-container d-flex flex-row justify-content-center col-12">
-            <div class="person-container d-flex flex-row justify-content-center mr-5 col-6">
-                <div class="d-flex flex-column mr-5">
-                    <div class="icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                        </svg>
-                    </div>
-                    <p class="icon-name">PROFILE</p>
-                </div>
-                <div >
-                    <h1 class="main-heading">CAROLINE THOMPSON</h1>
-                    <p class="description">ART DIRECTOR</p>
-                </div>
-            </div>
-            <div class="advertising-container col-5">
-                <p class="content">Advertising campaigns are my forte. I have been in the industry for 6 years</p>
-                <p class="content">Address: Los Angeles,California <br />
-                    Phone : +(87)834 2934 2344 <br />
-                    Website: carolinethompson.com</p>
-            </div>
+<body onload="showPopup('about')">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  
+    <div class="about-container">
+      <div class="sidebar">
+        <div class="profile">
+          <img class="profile-picture" src="backgrouds/profile_photo.jpg" alt="Profile Picture">
+          <div>
+              <h1 class="profile-name">Jayaram Akula</h1>
+              <p class="profile-about">Hello, I'm Jayaram, a full-stack developer passionate about building web applications.</p>
+          </div>
         </div>
-        <hr />
-        <div class="section-container d-flex flex-row justify-content-center col-12">
-            <div class="d-flex flex-column justify-content-center mr-5">
-                <div class="icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-briefcase m-1" viewBox="0 0 16 16">
-                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                    </svg>
-                </div>
-                <p class="icon-name">WORK</p>
+        <div class="details-container">
+            <div class="details-icons">
+                <div class="details-options">
+                    <button type="button" class="icon" onclick="showPopup('about')">
+                        <i class="bi bi-file-person boot-icon"></i>
+                        <p class="option">About</p>
+                    </button type="button">
+                    <button type="button" class="icon" onclick="showPopup('certification')">
+                        <i class="bi bi-patch-check-fill boot-icon"></i>
+                        <p class="option">Certification</p>
+                    </button type="button">
+                    <button type="button" class="icon" onclick="showPopup('projects')">
+                    <i class="bi bi-kanban-fill boot-icon"></i>
+                        <p class="option">Projects</p>
+                    </button type="button">
+                    <button type="button" class="icon" onclick="showPopup('skills')">
+                      <i class="bi bi-list-stars boot-icon"></i>
+                        <p class="option">Skills</p>
+                    </button type="button">
             </div>
-            <div class="d-flex flex-column col-8 col-sm-9">
-                <div class="d-flex flex-row">
-                    <p class="content col-sm-4 mt-2">2022 - 2023</p>
-                    <div class="">
-                        <p class="heading-content content">Creative Mind Graphic Design Studio California * Senior Art Director</p>
-                        <p class="content">Generating and developing ides to present to the cilent</p>
-                    </div>
+            </div>      
+            <div class="display-details">
+                <div class="popup" id="about-popup"><!-- Start Timeline -->
+                  <h1 class="details">About</h1>
+                    <section id= "timeline">
+                      <ul class= "line">
+                        <li>
+                          <div class="cont">
+                            <h3>NxtWave</h3>
+                            <p>
+                              Trined as a full-stack Developer
+                            </p>
+                            <time>25 may, 2022</time>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="cont">
+                            <h3>title here</h3>
+                            <p>
+                              Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus sit amet nulla blandit, sodales odio            quis, semper nisi. 
+                            </p>
+                            <time>16 nov, 2016</time>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="cont">
+                            <h3>Diploma</h3>
+                            <p>
+                              In 2017, I completed a diploma in mechanical engineering.
+                            </p>
+                            <time>16 june, 2017</time>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="cont">
+                            <h3>High School</h3>
+                            <p>
+                              Completed class 12th in a year of 2013 
+                            </p>
+                            <time>10 july, 2013</time>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="cont">
+                            <h3>Schooling</h3>
+                            <p>
+                              Completed SSC in a of 2011 May 16
+                            </p>
+                            <time>16 May, 2011</time>
+                          </div>
+                        </li>
+                      </ul>
+                    </section><!-- End Timeline -->
                 </div>
-                <div class="d-flex flex-row">
-                    <p class="content col-sm-4 mt-2">2021 - 2022</p>
-                    <div class="">
-                        <p class="heading-content content">Creative Mind Graphic Design Studio California * Senior Art Director</p>
-                        <p class="content">Generating and developing ides to present to the cilent</p>
-                    </div>
+                <div class="popup" id="certification-popup">
+                    <h1 class="details">Certification</h1>
+                    <div id="certification-list"></div>
+                </div>            
+                <div class="popup" id="projects-popup">
+                    <h1 class="details">Few of My Projects</h1>
+                    <ul id="projects-list"></ul>
                 </div>
-                <div class="d-flex flex-row">
-                    <p class="content col-sm-4 mt-2">2020 - 2021</p>
-                    <div class="">
-                        <p class="heading-content content">Creative Mind Graphic Design Studio California * Senior Art Director</p>
-                        <p class="content">Generating and developing ides to present to the cilent</p>
-                    </div>
+                <div class="popup" id="skills-popup">
+                  <h1 class="details">Skills</h1>
+                  <div class="skills-container"></div>
                 </div>
-            </div>
+            </div>     
         </div>
-        <hr />
-        <div class="section-container d-flex flex-row justify-content-center col-12">
-            <div class="person-container d-flex flex-row justify-content-center col-8 mr-5">
-                <div class="d-flex flex-column justify-content-center mr-5">
-                <div class="icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-card-checklist m-2" viewBox="0 0 16 16">
-                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
-                    </svg>
-                </div>
-                <p class="icon-name">SKILLS & AWARDS</p>
-            </div>
-            <div class="status-container d-flex flex-column justify-content-center">
-                <div class="d-flex flex-row dots-paragraph">
-                    <p class="content mt-2 mr-5">UI/UX</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-three-dots ml-5" viewBox="0 0 16 16">
-                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                    </svg>
-                </div>
-                <div class="d-flex flex-row dots-paragraph">
-                    <p class="content mt-2 mr-4">Growth Marketing</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="56" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-dot dots" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-dot dots" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-                </div>
-                
-                <div class="d-flex flex-row justify-content-start  dots-paragraph">
-                    <p class="content mt-2 mr-5">Typography</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-dot dots ml-0" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-dot dots" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-                </div>
-                <div class="d-flex flex-row justify-content-start  dots-paragraph">
-                    <p class="content mt-2 mr-5">Video Production</p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-dot dots" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-dot dots" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                    </svg>
-
-                </div>
-                <div class="d-flex flex-row justify-content-start  dots-paragraph">
-                    <p class="content mt-2 mr-5">Print Design</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-three-dots ml-3" viewBox="0 0 16 16">
-                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                    </svg>
-                </div>
-                </div>
-            </div>
-            <div class=" award-container d-flex flex-column justify-content-start col-4">
-                <div class=" d-flex flex-row">
-                    <p class="content m-3">2019</p>
-                    <div>
-                        <p class="heading-content content">Suiton Design Awards</p>
-                        <p class="content">10 Graphic Designer</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row">
-                    <p class="content m-3">2019</p>
-                    <div>
-                        <p class="heading-content content">Graphic London Award</p>
-                        <p class="content">Winning Entry: Poster Design</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row">
-                    <p class="content m-3">2019</p>
-                    <div>
-                        <p class="heading-content content">LA Crreatives Award</p>
-                        <p class="content">Winning Entry: Ad campaign</p>
-                    </div>
-                </div>
-            </div>
         </div>
-        <hr />
-        <div class="section-container d-flex flex-row justify-content-center col-12">
-            <div class="d-flex flex-column justify-content-center mr-5">
-                <div class="icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
-                    </svg>
-                </div>
-                <p class="icon-name">INTRESTS</p>
+        <div class="bottom-container">
+          <div class="wrapper">
+            <div class="button">
+              <a style="text-decoration:none" href="https://www.linkedin.com/in/jayaram-akula-3178bb241" target="_blank">
+              <div class="icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+                <span>Linkedin</span>
+              </a>
             </div>
-            <div class="d-flex flex-row justify-content-center m-5 col-7 intrest-container">
-                <div class="d-flex flex-column mr-3 ">
-                    <div class="image-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-laptop mt-3 color" viewBox="0 0 16 16">
-                            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
-                        </svg>
-                    </div>
-                    <p class="icon-name">Internet</p>
+            <div class="button">
+              <a href="https://www.github.com/JayaramHarry" style="text-decoration:none" target="_blank">
+              <div class="icon">
+                  <i class="bi bi-github"></i>
                 </div>
-                <div class="mr-3">
-                    <div class="image-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil color mt-3" viewBox="0 0 16 16">
-                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                        </svg>
-                    </div>
-                    <p class="icon-name">Sketching</p>
-                </div>
-                <div class="mr-3">
-                    <div class="image-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-film mt-3 color" viewBox="0 0 16 16">
-                            <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
-                        </svg>
-                    </div>
-                    <p class="icon-name">Movies</p>
-                </div>
-                <div>
-                    <div class="image-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-music-note-list mt-3 color" viewBox="0 0 16 16">
-                            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
-                            <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
-                            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
-                            <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </div>
-                    <p class="icon-name">Music</p>
-                </div>
+                <span>GitHub</span>
+              </a>
             </div>
-        </div>
-        <hr />
-        <div class="section-container d-flex flex-row justify-content-center col-12 mt-5">
-            <div class="d-flex flex-column justify-content-center mr-5">
-                <div class="icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-journal-medical m-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                    </svg>
-                </div>
-                <p class="icon-name">EDUCATION</p>
+            <div class="button">
+                <a href="https://www.instagram.com/harry__jai" style="text-decoration:none" target="_blank">
+                <div class="icon">
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                  <span>Instagram</span>
+                </a>
+            </div>  
+          </div>
+          <div class="contact-container">
+            <h1 class="contact">Contact</h1>
+          <div class="contact-details">
+            <div class="contact-icon">
+              <i class="bi bi-envelope-at"></i>
+              <P class="mail-nnumber">akulajayaram96@gmail.com</P>
             </div>
-            <div>
-                <div class="d-flex flex-row justify-content-start">
-                    <p class="content m-3 col-4">2016 - 2020</p>
-                    <div class="d-flex flex-column ml-2 col-6">
-                        <p class="heading-content">Alabama Collage of Design and Technology * Cum Luade</p>
-                        <p class="content">Beacholer of Fine Arts Major in Advertising</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row justify-content-start">
-                    <p class="content m-3 col-4">2013 - 2016</p>
-                    <div class="d-flex flex-column ml-2 col-6">
-                        <p class="heading-content">Helena All Girls Senior Hign School * Veledictorian</p>
-                        <p class="content">President of Art And Design Club</p>
-                    </div>
-                </div>
+            <div class="contact-icon">
+              <i class="bi bi-telephone"></i>
+              <p class="mail-nnumber">+91 7893747727</p>
             </div>
-
+          </div>
+          </div>
         </div>
     </div>
-</body>
 
+    <script>
+        // to popup the options--------------------------------------------------------------------->
+        function showPopup(popupId) {
+            var popups = document.querySelectorAll('.popup');
+            for (var i = 0; i < popups.length; i++) {
+                popups[i].classList.remove('show');
+            }
+
+            var popup = document.getElementById(popupId + '-popup');
+            popup.classList.add('show');
+        }
+
+    // JavaScript code for generating certification list items dynamically
+var certificationsData = [
+  {
+    title: "HTML",
+    images: [
+      { src: "certifications/build-your-own-static-website.jpg",
+       link: "https://certificates.ccbp.in/intensive/static-website?id=MDZCVQMZQX" },
+    ]
+  },
+  {
+    title: "CSS",
+    images: [
+      { src: "certifications/build-your-own-static-website.jpg",
+       link: 'https://certificates.ccbp.in/intensive/responsive-website?id=XEKEFUWRSP' },
+       { src: "certifications/responsive-web-design-using-flexbox.jpg",
+       link: 'https://certificates.ccbp.in/intensive/flexbox?id=NJIXIZZNXY' }
+    
+    ]
+  },
+  {
+    title: "Python",
+    images: [
+      { src: "certifications/programming-foundations-with-python.jpg",
+       link: 'https://certificates.ccbp.in/intensive/programming-foundations?id=XQUZUGIBAV' }
+    ]
+  },
+  {
+    title: "JavaScript",
+    images: [
+      { src: "certifications/javascript-essentials.jpg", 
+      link: "https://certificates.ccbp.in/intensive/javascript-essentials?id=UXKNCGKYFC" },
+
+      { src: "certifications/build-your-own-dynamic-web-application.jpg",
+       link: 'https://certificates.ccbp.in/intensive/dynamic-web-application?id=QJVKTWIAWW' }
+    ]
+  },
+  {
+    title: "SQL",
+    images: [
+      { src: "certifications/introduction-to-databases.jpg",
+       link: 'https://certificates.ccbp.in/intensive/introduction-to-databases?id=NGJAGJTFZI' }
+    ]
+  },
+  {
+    title: "Node Js",
+    images: [
+      { src: "certifications/node-js.jpg",
+       link: 'https://certificates.ccbp.in/intensive/node-js?id=TYQFYDXXFG' }
+    ]
+  },
+  {
+    title: "React Js",
+    images: [
+      { src: "certifications/react-js.jpg",
+       link: 'https://certificates.ccbp.in/intensive/react-js?id=LRCBBEPITH' }
+    ]
+  },
+  {
+    title: "Git",
+    images: [
+      { src: "certifications/developer-foundation.jpg",
+       link: 'https://certificates.ccbp.in/intensive/developer-foundations?id=VKGBBEABDQ' }
+    ]
+  },
+];
+
+
+var certificationsContainer = document.getElementById('certification-list');
+
+certificationsData.forEach(function (certificationData) {
+  var certificationItem = document.createElement('div');
+  certificationItem.className = 'certification-item';
+
+  var certificationTitle = document.createElement('h3');
+  certificationTitle.textContent = certificationData.title;
+  certificationTitle.style.color = "#ffffff"
+  certificationItem.appendChild(certificationTitle);
+
+  var certificationList = document.createElement('div');
+  certificationList.className = 'certification-list';
+  certificationItem.appendChild(certificationList);
+
+  certificationData.images.forEach(function (imageData) {
+    var certificationImageContainer = document.createElement('div');
+    certificationImageContainer.className = 'certification-image-container';
+    certificationList.appendChild(certificationImageContainer);
+
+    var certificationImage = document.createElement('img');
+    certificationImage.src = imageData.src;
+    certificationImage.alt = certificationData.title + ' Image';
+    certificationImage.className = 'certification-image';
+    certificationImageContainer.appendChild(certificationImage);
+
+    var certificationLink = document.createElement('a');
+    certificationLink.href = imageData.link;
+    certificationLink.textContent = 'View Certificate';
+    certificationLink.style.color = "#ffffff";
+    certificationLink.target = "_blank"
+    certificationImageContainer.appendChild(certificationLink);
+  });
+
+  certificationsContainer.appendChild(certificationItem);
+});
+
+
+   // project option code------------------------------------------------------------------------->
+var projectData = [
+            {
+                title: "Emoji Game ",
+                description: `Developed responsive Emoji memory game where users can win it by clicking unique emoji each time till all displayed emojis are clicked.
+                All emojis positions will be randomized after each click.
+                List of Emojis is displayed by using React components, props , lists, conditional rendering, styled using CSS and randomized emojis placed using event listeners by updating react state.
+                Updated different game states such as emojis list, winning state and losing state by using game state variable and conditional rendering.`,
+                technologiesUsed: " React JS, CSS, Bootstrap",
+                projectLink: "https://emojigamejai.ccbp.tech"
+            },
+            {
+                title: "Github Popular Repos",
+                description: `Developed a web application where user can see popular github repos and can be filtered through a selected programming language
+                Implemented repos list using React component, props, lists & keys and achieved responsiveness using bootstrap flex classes and CSS box model through mobile-first approach.
+                Fetched repos particular to a language from server asynchronously using fetch GET HTTP API call by sending selected language in query parameter.`,
+                technologiesUsed : "React JS, REST API Calls, CSS, Bootstrap",
+                projectLink: "https://jaigithubrepo.ccbp.tech"
+            },
+            {
+                title: "Movies App (Netflix/Amazon Prime Clone)",
+                description: `Created a comprehensive OTT platform for movie lovers, mimicking the functionality of Netflix and Amazon Prime.
+                Implemented user-friendly navigation with React Router, dynamic scrolling with React Slick, and visually appealing UI with Figma.
+                Accessible movie database and authentication through TMDb APIs, and secure user login with client storage`,
+                technologiesUsed : "HTML, CSS, JavaScript, React JS, Bootstrap, React Slick,Figma, client storage.",
+                projectLink: "https://jayaramMovieApp.ccbp.tech"
+            }
+        ];
+
+    var projectsList = document.getElementById('projects-list');
+    projectData.map(project => {
+            var listItem = document.createElement('li');
+            listItem.className= "project-lists"
+
+            var titleElement = document.createElement('h3');
+            titleElement.textContent = project.title;
+            titleElement.className = "project-heading"
+            listItem.appendChild(titleElement);
+
+            var descriptionElement = document.createElement('p');
+            descriptionElement.textContent = project.description;
+            descriptionElement.style.color = "#ffffff"
+            listItem.appendChild(descriptionElement);
+
+            var technologiesElement = document.createElement('p');
+            technologiesElement.textContent = `Technologies Used: ${project.technologiesUsed}`;
+            technologiesElement.className = "tech-paragraph"
+            technologiesElement.style.color = "#ffffff"
+            listItem.appendChild(technologiesElement);
+
+            var githubLinkElement = document.createElement('a');
+            githubLinkElement.textContent = `Url:- ${project.projectLink}`;
+            githubLinkElement.href = project.projectLink;
+            githubLinkElement.style.color = "#000000";
+            githubLinkElement.target = "_blank";
+            listItem.appendChild(githubLinkElement);
+
+            projectsList.appendChild(listItem);
+        });
+
+
+    // Skills option code --------------------------------------------------------------------------->
+var skillsData = [
+  {
+    skill: 'HTML',
+    image: 'languages/html-programming-language-icon.png',
+    progress: 100,
+    topics: ['Elements and Tags', 'Text Formatting and Structure','Hyperlinks and Navigation','Images and Multimedia', 
+    'Forms and Input Validation','Embedding Content from External Sources','Responsive Web Design with HTML',
+    'Metadata and Document Structure','HTML Best Practices and Optimization' ,'HTML5 Semantic Elements']
+  },
+  {
+    skill: 'CSS',
+    image: 'languages/css-logo.png',
+    progress: 90,
+    topics: ['CSS Selectors and Specificity', 'Typography', 'Colors and Backgrounds',
+    'Box Sizing and Layout Control', 'CSS Units and Measurements', 'Layout and Positioning',
+     'CSS Media Queries and Responsive Design', 'CSS3 Features and Selectors',' Specificity and Inheritance','Frameworks and Preprocessors',
+    'CSS Grid and Flexbox']
+  },
+  {
+    skill: 'Python',
+    image: 'languages/python-programming-logo-python-programming-language-png.png',
+    progress: 80,
+    topics: [ 'Layouts and Box Model','Variables and Data Types','Operators and Expressions',
+  'Control Flow','Data Structures','Functions','Modules and Packages','Object-Oriented Programming (OOP)','File Handling','Error Handling and Debugging',
+'Working with Dates and Time','File I/O and Serialization','API Integration']
+  },
+  {
+    skill: 'JavaScript',
+    image: 'languages/1_YPYdVAg5ieRspLI6HIpmDQ-javascript.png',
+    progress: 90,
+    topics: ['Variables and Data Types', 'Functions and Scope','Operators and Expressions','Control Flow','Working with Events','Arrays and Array Methods',
+    'Object-Oriented Programming (OOP) in JavaScript','Asynchronous JavaScript ','Error Handling and Debugging', 'DOM Manipulation','JSON (JavaScript Object Notation)',
+  'Web Storage and Cookies',]
+  },
+  {
+    skill: 'SQL',
+    image: 'languages/sql-logo.png',
+    progress: 100,
+    topics: ['Creating and Manipulating Databases','Retrieving Data with SELECT', 'Filtering and Querying Data','Joining Tables','Data Modification',
+     'Advanced Querying','Data Manipulation Language (DML)','Data Definition Language (DDL)','Database Constraints','SQL Data Types','SQL in Web Development',]
+  },
+  {
+    skill: 'Node Js',
+    image: 'languages/node-js-logo.png',
+    progress: 100,
+    topics: ['Node Package Manager (npm)',,'Core Modules','Asynchronous JavaScript with Callbacks','Promises and Async/Await','Working with Express.js','RESTful APIs with Express.js',
+  'Database Integration','Middleware Development','Authentication and Security','WebSocket Programming',]
+  },
+  {
+    skill: 'React Js',
+    image: 'languages/react-js-logo.png',
+    progress: 100,
+    topics: ['JSX (JavaScript XML)','Components and Props','State and Lifecycle','Handling Forms and User Input','Lists and Keys','Styling React Components','Conditional Rendering','React Router',
+  'State Management with React Context','React Hooks','Forms and Form Libraries','Error Handling and Error Boundaries','React and HTTP Requests',]
+  },
+  {
+    skill: 'GitHub',
+    image: 'languages/github-logo.png',
+    progress: 90,
+    topics: ['Git Basics','Remote Repositories and GitHub','Collaboration and Remote Workflows','Git Tags and Releases','Git Configuration and Customization','Git Security and Best Practices','Git Workflows in Open Source Projects',]
+  },
+];
+
+var skillsContainer = document.querySelector('.skills-container');
+
+skillsData.forEach(function (skillData) {
+  var skillElement = document.createElement('div');
+  skillElement.className = 'skill';
+  skillsContainer.appendChild(skillElement);
+
+  var skillCard = document.createElement('div');
+  skillCard.className = 'skill-card';
+  skillElement.appendChild(skillCard);
+
+  var skillFront = document.createElement('div');
+  skillFront.className = 'skill-front';
+  skillCard.appendChild(skillFront);
+
+  var skillImage = document.createElement('img');
+  skillImage.src = skillData.image;
+  skillImage.alt = skillData.skill;
+  skillImage.className = 'skill-image';
+  skillFront.appendChild(skillImage);
+
+  var skillBack = document.createElement('div');
+  skillBack.className = 'skill-back';
+  skillCard.appendChild(skillBack);
+
+  var skillHeading = document.createElement('h3');
+  skillHeading.textContent = skillData.skill;
+  skillHeading.className = 'skill-heading';
+  skillBack.appendChild(skillHeading);
+
+  var progressBar = document.createElement('div');
+  progressBar.className = 'progress-bar';
+
+  var progress = document.createElement('div');
+  progress.className = 'progress';
+  progress.style.width = skillData.progress + '%';
+  progress.textContent = `${skillData.progress} %`
+  progressBar.appendChild(progress);
+
+  skillBack.appendChild(progressBar);
+
+  var topicsPopup = document.createElement('div');
+  topicsPopup.className = 'topics-popup';
+  skillBack.appendChild(topicsPopup);
+
+  var topicsList = document.createElement('ul');
+  topicsList.className = 'topics-list';
+  topicsPopup.appendChild(topicsList);
+
+  skillData.topics.forEach(function (topic) {
+    var topicItem = document.createElement('li');
+    topicItem.className = "skill-list"
+    topicItem.textContent = topic;
+    topicsList.appendChild(topicItem);
+  });  
+});
+
+
+    // JavaScript code for showing and hiding popups
+    var skills = document.querySelectorAll('.skill');
+
+    skills.forEach(function (skill) {
+      skill.addEventListener('mouseenter', function () {
+        skill.querySelector('.topics-popup').style.display = 'block';
+      });
+
+      skill.addEventListener('mouseleave', function () {
+        skill.querySelector('.topics-popup').style.display = 'none';
+      });
+    });
+    </script>
+</body>
 </html>
