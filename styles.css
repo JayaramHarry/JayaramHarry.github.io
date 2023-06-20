@@ -161,13 +161,15 @@
 @media screen and (max-width: 768px){
   .boot-icon{
     font-size: 25px;
-    /* box-shadow: 0px -1px 20px 8px #efd223c7; */
+    box-shadow: 0px -1px 20px 1px #49d5ff;
     transition: #ccc;
     /* background: transparent; */
     background-image: linear-gradient(120deg, #89ee44, #a042b2, #f7de56, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: #ffff, 1px;
+    outline: auto;
+    width: 70px;
   }
 }
 .about-container .sidebar .icon p {
