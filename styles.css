@@ -617,19 +617,19 @@ ul{list-style: none}
 
 #timeline ul li:nth-child(3):after
 {
-  content: "\f11d";
+  content: "\2713";
   background-color: #f2af00;
 }
 
 #timeline ul li:nth-child(4):after
 {
-  content: "\f11d";
+  content: "\2713";
   background-color: #ce1126
 }
 
 #timeline ul li:last-child:after
 {
-  content: "\f11d";
+  content: "\2713";
   background-color: #6e2585
 }
 
