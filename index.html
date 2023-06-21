@@ -17,8 +17,14 @@
         <div class="profile">
           <img class="profile-picture" src="backgrouds/profile_photo.jpg" alt="Profile Picture">
           <div>
-              <h1 class="profile-name">Jayaram Akula</h1>
-              <p class="profile-about">Hello, I'm Jayaram, a full-stack developer passionate about building web applications.</p>
+            <p class="profile-about">Hello,</p>
+              <h1 class="profile-name"><sup class="im-tag">I'm</sup>J<span class="off-name">ayaram</span> A<span class="off-name">kula</span></h1>
+              <p class="profile-about">A full-stack developer passionate about building web applications.</p>
+              <div class="button-container">
+                <a href="https://s3-ap-south-1.amazonaws.com/nkb-backend-ccbp-media-static/ccbp_prod/media/resume_generated/Jayaram_2023-06-05-172845.pdf" target="_blank">
+                  <button class="CV-button">View My CV <span><i class="bi bi-arrow-right-short"></i></span></button>
+                </a>
+              </div>
           </div>
         </div>
         <div class="details-container">
@@ -315,7 +321,8 @@ var projectData = [
 
             var descriptionElement = document.createElement('p');
             descriptionElement.textContent = project.description;
-            descriptionElement.style.color = "#ffffff"
+            descriptionElement.style.color = "#ffffff";
+            descriptionElement.style.fontFamily = "bootstrap-icons";
             listItem.appendChild(descriptionElement);
 
             var technologiesElement = document.createElement('p');
