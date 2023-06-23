@@ -5,15 +5,17 @@
 
 
 .about-container {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
     min-height: 100%;
-    /*background-image: url("Computer_Programmer1920X10180.jpg");*/
-    /* background-image: url("sb-blog-programming.png"); */
-    background-color: #222223;
+    /* background-image: url(Computer_Programmer1920X10180.jpg); */
+    /* background-image: url(sb-blog-programming.png); */
+    background-image: linear-gradient(314deg ,#1d1515,#372828, #222245,#0d0707);
     height: 100%;
+    padding: 50px;
     
 }
 
@@ -113,6 +115,8 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    padding: 40px;
+    font-weight: bold;
 }
 @media screen and (max-width: 768px){
   .profile-about{
