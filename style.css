@@ -16,7 +16,11 @@
     background-image: linear-gradient(314deg ,#1d1515,#372828, #222245,#0d0707);
     height: 100%;
     padding: 50px;
-    
+}
+@media screen and (max-width: 768px){
+  .about-container{
+padding: 20px;
+  }
 }
 
 .about-container .sidebar {
@@ -706,7 +710,7 @@ ul{list-style: none}
 #timeline ul li .cont
 {
   width: 200px;
-  height: 110px;
+  height: fit-content;
   padding: 25px 10px 10px;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -995,7 +999,7 @@ ul{list-style: none}
     line-height: 120%
   }
   
-  #timeline ul li:nth-child(even) .cont{left: -175px}
+  #timeline ul li:nth-child(even) .cont{left: -152px}
   
   #timeline ul li .cont p,
   #timeline ul li .cont time
