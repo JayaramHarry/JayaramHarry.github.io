@@ -38,22 +38,22 @@
         <div class="details-container">
             <div class="details-icons">
                 <div class="details-options">
-                    <button type="button" class="icon" onclick="showPopup('about')">
-                        <i class="bi bi-file-person boot-icon"></i>
-                        <p class="option">About</p>
-                    </button type="button">
+                  <button type="button" id="playA" class="icon" onclick="showPopup('about')">
+                    <i class="bi bi-file-person boot-icon"></i>
+                    <p class="option">About</p>
+                </button>
                     <button type="button" class="icon" onclick="showPopup('certification')">
                         <i class="bi bi-patch-check-fill boot-icon"></i>
                         <p class="option">Certification</p>
-                    </button type="button">
+                    </button>
                     <button type="button" class="icon" onclick="showPopup('projects')">
                     <i class="bi bi-kanban-fill boot-icon"></i>
                         <p class="option">Projects</p>
-                    </button type="button">
+                    </button>
                     <button type="button" class="icon" onclick="showPopup('skills')">
                       <i class="bi bi-list-stars boot-icon"></i>
                         <p class="option">Skills</p>
-                    </button type="button">
+                    </button>
             </div>
             </div>      
             <div class="display-details">
@@ -177,13 +177,15 @@
 
 window.addEventListener('load', function() {
   var audio = new Audio('audioFiles/1687530126059n29176sf-voicemaker.in-speech.mp3');
-  audio.addEventListener('error', function(e) {
-    console.error('Error loading audio:', e);
-  });
-  audio.play().catch(function(e) {
-    console.error('Error playing audio:', e);
+  var playButton = document.getElementById('playA'); // Replace 'playButton' with the actual ID of your button
+  
+  playButton.addEventListener('click', function() {
+    audio.play().catch(function(e) {
+      console.error('Error playing audio:', e);
+    });
   });
 });
+
 
 
         // to popup the options--------------------------------------------------------------------->
