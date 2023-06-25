@@ -11,10 +11,10 @@
 <body onload="showPopup('about')">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   
-  <audio id="profile-audio" controls autoplay>
+  <!-- <audio id="profile-audio" controls autoplay>
     <source src="audioFiles/1687530126059n29176sf-voicemaker.in-speech.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>
+  </audio> -->
 
   
     <div class="about-container">
@@ -175,8 +175,8 @@
 
     <script>
 
-window.addEventListener('DOMContentLoaded', function() {
-  var audio = document.getElementById('profile-audio');
+window.addEventListener('load', function() {
+  var audio = new Audio('audioFiles/1687530126059n29176sf-voicemaker.in-speech.mp3'); 
   audio.play();
 });
 
