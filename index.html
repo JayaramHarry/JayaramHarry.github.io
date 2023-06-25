@@ -176,9 +176,15 @@
     <script>
 
 window.addEventListener('load', function() {
-  var audio = new Audio('audioFiles/1687530126059n29176sf-voicemaker.in-speech.mp3'); 
-  audio.play();
+  var audio = new Audio('audioFiles/1687530126059n29176sf-voicemaker.in-speech.mp3');
+  audio.addEventListener('error', function(e) {
+    console.error('Error loading audio:', e);
+  });
+  audio.play().catch(function(e) {
+    console.error('Error playing audio:', e);
+  });
 });
+
 
         // to popup the options--------------------------------------------------------------------->
         function showPopup(popupId) {
