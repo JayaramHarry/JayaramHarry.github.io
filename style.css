@@ -461,8 +461,9 @@ padding: 20px;
 
 .certification-item {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 20px;
   background-color: #222223;
   padding: 40px;
