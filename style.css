@@ -53,6 +53,9 @@ padding: 20px;
     /* box-shadow: 0px 0px 12px 10px #49d5ff; */
     border-bottom-left-radius: 5px;
 }
+.profile-picture:hover{
+  transform: scale(1.03);
+}
 @media  screen and (max-width: 768px) {
   .profile-picture{
     max-height: 300px;
@@ -62,6 +65,11 @@ padding: 20px;
   font-size: 30px;
   position: relative;
   font-family: castellar;
+}
+@media screen and (max-width: 768px) {
+  .im-tag{
+    font-size: 20px;
+  }
 }
 .profile-name{
     font-size: 100px;
@@ -125,6 +133,8 @@ padding: 20px;
 @media screen and (max-width: 768px){
   .profile-about{
     font-size: 20px;
+    padding: 10px 0px 0px 0px ;
+
   }
 }
 
@@ -178,6 +188,9 @@ padding: 20px;
     color: #f17324;
     padding: 5px;
     box-shadow: 0px 0px 12px 5px #22AF8D;
+}
+.icon:hover{
+  transform: scale(1.1);
 }
 .social{
   padding: 0px !important;
@@ -490,14 +503,18 @@ padding: 20px;
   margin-bottom: 20px;
   
 }
-
+.certification-image:hover{
+  transform: scale(1.1);
+}
 .project-lists{
   box-shadow: 8px 10px 5px 1px #888888;
   background-color: #1578d5;
   line-height: 2.0;
   padding: 10px;
   border-radius: 5px;
-  
+}
+.project-lists:hover{
+  transform: scale(1.1);
 }
 .project-heading{
   font-size: 23px;
